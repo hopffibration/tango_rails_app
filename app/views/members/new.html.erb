@@ -1,0 +1,38 @@
+<h1>New Member </h1>
+<%= form_for :member, url: members_path do |f| %>
+<p>
+  <%= f.label :first_name %><br>
+  <%= f.text_field :first_name %>
+</p>
+
+<p>
+  <%= f.label :last_name %><br>
+  <%= f.text_field :last_name %>
+</p>
+
+<p>
+  <%= f.label :email %><br>
+  <%= f.text_field :email %>
+</p>
+
+<p>
+  <%= f.label :status %><br>
+  <%= f.radio_button :status, 'R', :checked => true %>
+  <%= label :status_R, 'R' %><br>
+  <%= f.radio_button :status, 'V', :checked => false %>
+  <%= label :status_V, 'V' %><br>
+  <%= f.radio_button :status, 'SV', :checked => false %>
+  <%= label :status_SV, 'SV' %><br>
+  <%= f.radio_button :status, 'FS', :checked => false %>
+  <%= label :status_FS, 'FS' %><br>
+  <%= f.radio_button :status, 'S', :checked => false %>
+  <%= label :status_S, 'S' %><br>
+</p>
+
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
+
+<%= link_to 'See member list', members_path %>

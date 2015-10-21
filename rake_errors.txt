@@ -1,0 +1,6 @@
+** Invoke searchkick:reindex:all (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute searchkick:reindex:all
+Reindexing Member...
+Reindex complete

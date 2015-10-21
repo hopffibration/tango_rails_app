@@ -1,0 +1,23 @@
+<p>
+  <strong>First: </strong>
+  <%= @member.first_name %>
+</p>
+
+<p>
+  <strong>Last: </strong>
+  <%= @member.last_name %>
+</p>
+
+<p>
+  <strong>email: </strong>
+  <%= @member.email %>
+</p>
+
+<p>
+  <strong>Status: </strong>
+  <%= @member.status %>
+</p>
+
+
+<%= link_to 'Back', members_path %>
+
